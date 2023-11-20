@@ -14,7 +14,7 @@
   <li>O acesso ao banco de dados irá diminuir.</li>
   <li>
     <p>Não necessariamente precisamos repassar o objeto como parâmetro durante todo o fluxo do processamento, pois pode ser utilizado a interface de acesso a dados normalmente visto que a busca no banco de dados irá ocorrer uma única vez.</p>
-    <p>Com isso, a necessidade de parâmetros tende a diminuir e os registros podem ser solicitados em qualquer ponto do processamento, sem aumentar as idas na fonte de dados.</p>
+    <p>Com isso, a necessidade de parâmetros tende a diminuir (tornando os métodos mais independentes) e os registros podem ser solicitados em qualquer ponto do processamento, sem aumentar as idas na fonte de dados.</p>
   </li>
   <li>Não será possível, no mesmo fluxo de processamento, trabalhar com mais de uma versão para o mesmo registro.</li>
 </ul>
