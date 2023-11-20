@@ -1,7 +1,7 @@
 # Identity Map Pattern
    
 ## Contexto
-<p>O Identity Map é um pattern que visa trabalhar somente com uma única versão de um registro com o objetivo de não gerar conflitos durante o fluxo de um processamento.</p>
+<p>O Identity Map é um pattern que visa trabalhar somente com uma única versão de um registro, tendo como objetivo de não gerar conflitos durante o fluxo de um processamento.</p>
 <p>O seu conceito consiste em: </p>
 <ul>
   <li>A primeira solicitação de busca por um registro, irá acessar diretamte a fonte de dados e salvar a sua versão em memória.</li>
