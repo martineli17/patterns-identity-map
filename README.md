@@ -4,7 +4,7 @@
 <p>O Identity Map é um pattern que visa trabalhar somente com uma única versão de um registro, tendo como objetivo de não gerar conflitos durante o fluxo de um processamento.</p>
 <p>O seu conceito consiste em: </p>
 <ul>
-  <li>A primeira solicitação de busca por um registro, irá acessar diretamte a fonte de dados e salvar a sua versão em memória.</li>
+  <li>A primeira solicitação de busca por um registro irá acessar diretamente a fonte de dados e salvar a sua versão em memória.</li>
   <li>As solicitações posteriores, durante o processamento daquele fluxo, irão acessar o registro que está em memória pela primeira solicitação feita.</li>
 </ul>
 <p>Um exemplo de utilização desse pattern é implementá-lo na camada de Data/Repository da sua aplicação.</p>
@@ -26,7 +26,7 @@
   <li>Data</li>
   <li>Apresentação</li>
 </ul>
-<p>Na camada de Data, é encontrado a implementação do Context do EF e o Repositories. Mas, lém disso, foi implementado a utilização do Identity Map.</p>
+<p>Na camada de Data, é encontrado a implementação do Context do EF e o Repositories. Mas, além disso, foi implementado a utilização do Identity Map.</p>
 <p>A implementação consiste no seguinte fluxo:</p>
 <ol>
   <li>
